@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sistema de ingreso de gimnasio</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <h1 class="text-center mt-5 mb-5">Lista de alumnos</h1>
+
+  <div class="container">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" onclick="modalAgregar()" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Agregar alumno
+        </button>
+
+    <hr>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">DNI</th>
+          <th scope="col">Opciones</th>
+        </tr>
+      </thead>
+      <tbody id="pbody">
+   
+
+      </tbody>
+    </table>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Agregar usuario</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <input type="hidden" id="id">
+
+            <div class="row">
+              <div class="col">
+                Nombre <br>
+                <input id="nombre" type="text">
+              </div>
+              <div class="col">
+                Apellido<br>
+                <input id="apellido" type="text">
+              </div>
+              <div class="col">
+                DNI<br>
+                <input id="dni" type="text">
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="botonAgregar" onclick="funcionAgregar()" class="btn btn-primary">Agregar</button>
+            <button type="button" id="botonEditar" onclick="funcionEditar()" class="btn btn-primary">Editar</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <br><br>
+  <div id="result" class="jumbotron">
+  </div>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/c9ccc8d31d.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</body>
+
+</html>

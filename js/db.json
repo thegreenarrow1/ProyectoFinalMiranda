@@ -1,0 +1,10 @@
+{
+  "alumnos": [
+    {
+      "id": 1,
+      "nombre": "Nicolas",
+      "apellido": "Miranda",
+      "dni": 38417608
+    }
+  ]
+}
